@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alicilar.SepetActivity"
+    android:background="@color/white">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/liste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/r1"
+        android:layout_alignParentTop="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gri"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/toplamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ödenecek Tutar"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/toplam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toplamText"
+            android:text="0"
+            android:textColor="@color/buton"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toplamText"
+            android:text="TL"
+            android:layout_toEndOf="@id/toplam"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/buton"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sepetOnayBtn"
+            app:backgroundTint="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="Sepeti Onayla"
+            android:padding="10dp"
+            android:background="@color/buton"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

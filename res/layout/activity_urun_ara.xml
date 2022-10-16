@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alicilar.UrunAraActivity">
+
+    <RelativeLayout
+        android:id="@+id/r7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/gri"
+        android:layout_centerHorizontal="true"
+        android:padding="11dp">
+
+        <EditText
+            android:id="@+id/ara"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buton"
+            android:hint="Aradığınız ürün adını girin."
+            android:textSize="17sp"/>
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ara"
+            android:layout_marginLeft="40dp"
+            android:text="➤"
+            android:textSize="20dp"
+            android:background="@drawable/buton"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/aramaListesi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r7">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

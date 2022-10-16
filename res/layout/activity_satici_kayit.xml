@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r13"
+    tools:context=".Saticilar.SaticiKayitActivity">
+
+    <ImageView
+        android:id="@+id/img_satici_kayit"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sellericon"/>
+
+    <TextView
+        android:id="@+id/baslik_satici_kayit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Satıcı Kayıt Formu"
+        android:gravity="center"
+        android:layout_below="@+id/img_satici_kayit"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/grikutu"
+        android:padding="10dp"
+        android:textColor="@color/sellerr"/>
+
+    <EditText
+        android:id="@+id/satici_kayit_adSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baslik_satici_kayit"
+        android:hint="İsim Soyisim.."
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/sellerr"/>
+
+    <EditText
+        android:id="@+id/satici_kayit_telNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/satici_kayit_adSoyad"
+        android:hint="Telefon Numarası.."
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/sellerr"/>
+
+    <EditText
+        android:id="@+id/satici_kayit_eMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/satici_kayit_telNo"
+        android:hint="E-Posta Adresi.."
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/sellerr"/>
+
+    <EditText
+        android:id="@+id/satici_kayit_sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/satici_kayit_eMail"
+        android:hint="Şifre.."
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/sellerr"/>
+
+    <EditText
+        android:id="@+id/satici_kayit_adres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/satici_kayit_sifre"
+        android:hint="Dükkan - İş Adresi.. "
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/sellerr"/>
+
+
+    <Button
+        android:id="@+id/satici_kayit_btn"
+        app:backgroundTint="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/satici_kayit_adres"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/sellerinpt"
+        android:text="Kayıt Ol"
+        android:textColor="@color/sellerr"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/satici_zaten_kayitli_btn"
+        app:backgroundTint="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/satici_kayit_btn"
+        android:layout_marginTop="15dp"
+        android:padding="25dp"
+        android:background="@drawable/sellerbtn"
+        android:text="Zaten üye misiniz? Giriş Yapın."
+        android:textAllCaps="false"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

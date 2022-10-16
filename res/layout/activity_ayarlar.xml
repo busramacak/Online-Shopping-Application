@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alicilar.AyarlarActivity"
+    android:background="@drawable/as">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_ayarlar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/buton">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/close_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Close"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/update_account_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profil_fotisi"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/appbar_ayarlar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profil"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/gri"/>
+
+    <TextView
+        android:id="@+id/profil_img_degistir_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_profil_fotisi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="Profil Ayarları"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/settings_telNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profil_img_degistir_btn"
+        android:hint="Telefon Numarası.."
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/buton"/>
+
+    <EditText
+        android:id="@+id/settings_adSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_telNo"
+        android:hint="İsim Soyisim.."
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/buton"/>
+
+    <EditText
+        android:id="@+id/settings_adres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_adSoyad"
+        android:hint="Adres.."
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/buton"/>
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/guvSorusuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_adres"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/input"
+        android:textColor="@color/buton"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:text="Güvenlik Sorusu.."/>
+
+
+</RelativeLayout>

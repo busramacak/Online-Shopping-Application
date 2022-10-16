@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alicilar.SiparisOnayActivity"
+    android:id="@+id/r12"
+    android:background="@drawable/as">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teslimat Bilgileri"
+        android:textSize="18dp"
+        android:textColor="@color/buton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/aliciAdSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="İsim Soyisim"
+        android:backgroundTint="@color/buton" />
+
+    <EditText
+        android:id="@+id/aliciTelefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aliciAdSoyad"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Telefon Numarası"
+        android:backgroundTint="@color/buton" />
+
+    <EditText
+        android:id="@+id/teslimatAdresi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aliciTelefon"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Teslimat Adresi"
+        android:backgroundTint="@color/buton" />
+
+    <EditText
+        android:id="@+id/il"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teslimatAdresi"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="İl"
+        android:backgroundTint="@color/buton" />
+
+    <EditText
+        android:id="@+id/ilce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/il"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="İlçe"
+        android:backgroundTint="@color/buton" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gri"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/toplmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ödenecek Tutar"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/toplm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toplmText"
+            android:text="0"
+            android:textColor="@color/buton"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toplmText"
+            android:text="TL"
+            android:layout_toEndOf="@id/toplm"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/buton"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/adresOnayBtn"
+            app:backgroundTint="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="Adresi Onayla"
+            android:padding="10dp"
+            android:background="@color/buton"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9C0303</color>
+    <color name="colorPrimaryDark">#BF007A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="teal_200">#D30F0F</color>
+    <color name="teal_700">#25173C</color>
+    <color name="gri">#ECEAEA</color>
+    <color name="buton">#805BBC</color>
+    <color name="koyuGri">#B6B6B6</color>
+    <color name="sellerr">#0091EA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r9"
+    tools:context=".Admin.AdminYeniUrunEkleActivity">
+
+
+    <TextView
+        android:id="@+id/kategori_ismi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori Adı:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/urunResmiSec"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/kategori_ismi"
+        android:src="@drawable/resim_secin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/urunAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunResmiSec"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Ürün ismi.."
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/sellerinpt"/>
+
+    <EditText
+        android:id="@+id/urunCesidi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunAdi"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:hint="Ürün Çeşidi.."
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/sellerinpt"/>
+
+    <EditText
+        android:id="@+id/urunFiyati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunCesidi"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:hint="Ürün Fiyati.."
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/sellerinpt"/>
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/yeniUrunEkleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunFiyati"
+        android:text="Ürün Ekle"
+        android:textAllCaps="false"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:padding="17dp"
+        android:textSize="17sp"
+        android:background="@drawable/sellerbtn"/>
+
+</RelativeLayout>

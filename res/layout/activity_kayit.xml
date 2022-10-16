@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/r3"
+    android:layout_height="match_parent"
+    android:background="@drawable/as"
+    tools:context=".Alicilar.KayitActivity">
+
+    <ImageView
+        android:id="@+id/kayit_applogo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp" />
+
+    <EditText
+        android:id="@+id/kayitKullaniciadi_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayit_applogo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Kullanıcı Adı"
+        android:textColor="@color/buton"
+        android:textColorHint="@color/buton"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/kayitTelefon_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayitKullaniciadi_input"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Telefon Numarası"
+        android:inputType="phone"
+        android:textColor="@color/buton"
+        android:textColorHint="@color/buton"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/kayitSifre_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayitTelefon_input"
+        android:background="@drawable/input"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="şifre"
+        android:inputType="textPassword"
+        android:textColor="@color/buton"
+        android:textColorHint="@color/buton"
+        android:textSize="17sp"/>
+
+
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/kayit_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/kayitSifre_input"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buton"
+        android:padding="15dp"
+        android:text="Üye Ol"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+
+</RelativeLayout>

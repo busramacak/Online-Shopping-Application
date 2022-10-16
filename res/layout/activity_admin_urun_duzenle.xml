@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Admin.AdminUrunDuzenleActivity"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gri">
+
+
+
+        <ImageView
+            android:id="@+id/urun_resmi_duzenle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"/>
+
+        <EditText
+            android:id="@+id/urun_adi_duzenle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ürün Adı"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/urun_resmi_duzenle"
+            android:backgroundTint="@color/sellerr"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/sellerr"/>
+
+
+        <EditText
+            android:id="@+id/urun_fiyati_duzenle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/urun_adi_duzenle"
+            android:hint="Ürün Fiyatı"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="@color/sellerr"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/sellerr"/>
+
+        <EditText
+            android:id="@+id/urun_cesidi_duzenle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/urun_fiyati_duzenle"
+            android:textAlignment="center"
+            android:hint="Ürün Çeşidi"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="@color/sellerr"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:textColor="@color/sellerr"/>
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/degisikOnayBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/urun_cesidi_duzenle"
+            android:layout_marginTop="10dp"
+            android:text="Değişiklikleri Onayla"
+            android:textAllCaps="false"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/sellerbtn"/>
+
+        <Button
+            app:backgroundTint="@null"
+            android:id="@+id/urunuSilBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/degisikOnayBtn"
+            android:text="Ürünü Sil"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"
+            android:padding="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/sellerbtn"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
